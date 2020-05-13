@@ -16,8 +16,10 @@
     "url": "https://github.com/Mirandor/good-readme/issues"
   },
   "dependencies": {
-    "dotenv": "^8.0.0",
-    "inquirer": "^6.3.1"
+    "chalk": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "inquirer": "^6.5.2",
+    "util": "^0.12.3"
   },
   "homepage": "https://github.com/Mirandor/good-readme#readme"
 }
