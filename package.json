@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "inquirer": "^6.5.2",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,16 +17,10 @@
     "type": "git",
     "url": "git+https://github.com/Mirandor/good-readme.git"
   },
-  "author": "Darth Mirandor",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Mirandor/good-readme/issues"
-  },
-  "dependencies": {
-    "chalk": "^4.0.0",
-    "dotenv": "^8.2.0",
-    "inquirer": "^6.5.2",
-    "util": "^0.12.3"
   },
   "homepage": "https://github.com/Mirandor/good-readme#readme"
 }

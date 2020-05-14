@@ -1,10 +1,10 @@
 
 # good-readme
-:vampire: 
-[![mirandor](https://img.shields.io/badge/GitHub-mirandor-black?logo=github&style=flat-square)](https://github.com/Mirandor/good-readme)
-https://img.shields.io/github/license/mirandor/good-readme?color=black&logo=github
+:zombie: 
+[![Mirandor](https://img.shields.io/badge/GitHub-Mirandor-black?logo=github&style=flat-square)](https://github.com/Mirandor/good-readme)
+
 ## Description
-Create a README.md file for your repo.
+README.md file generator.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -35,7 +35,7 @@ npm test
 ````
 
 ## Questions
-Contact @mirandor at <darth.mirandor@gmail.com> with any questions or issues.
+Contact @Mirandor at <darth.mirandor@gmail.com> with any questions or issues.
 
 ## Acknowledgments
 A list of resources used for this README generator
