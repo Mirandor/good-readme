@@ -4,7 +4,7 @@
 [![Mirandor](https://img.shields.io/badge/GitHub-Mirandor-black?logo=github&style=flat-square)](https://github.com/Mirandor/good-readme)
 
 ## Description
-README.md file generator.
+Create a readme file for your repo
 
 ## Table of Contents
 * [Installation](#installation)
