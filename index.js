@@ -13,15 +13,15 @@ const success = chalk.bold.black.bgGreenBright;
 // init function & inquirer questions 
 function init(){
   inquirer.prompt([
-  {
-    type: "input",
-    name: "username",
-    message: "What is your GitHub name?"
-  },
-  {
-    type: "input",
-    name: "email",
-    message: "What is your email?"
+    {
+      type: "input",
+      name: "username",
+      message: "What is your GitHub name?"
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "What is your email?"
   },
   {
     type: "input",
@@ -65,7 +65,13 @@ function init(){
     type: "input",
     name: "contributing",
     message: "What do users need to know about contributing to the repo?"
-  }
+  },
+  {
+    type: "list",
+    name: "emoji",
+    message: "What even are you?",
+    choices: ["mage", "vampire", "merman", "zombie"]
+  },
   ]).then(function(data){
 
   writeToFile("README.md", generateMarkdown({ ...data }));

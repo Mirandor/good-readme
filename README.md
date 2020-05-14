@@ -1,9 +1,10 @@
 
 # good-readme
-[![GitHub license](https://img.shields.io/github/license/Mirandor/good-readme?label=GitHub&logo=github)](https://github.com/Mirandor/good-readme)
-
+:vampire: 
+[![mirandor](https://img.shields.io/badge/GitHub-mirandor-black?logo=github&style=flat-square)](https://github.com/Mirandor/good-readme)
+https://img.shields.io/github/license/mirandor/good-readme?color=black&logo=github
 ## Description
-create a simple good README.md file for your repo
+Create a README.md file for your repo.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -18,8 +19,9 @@ Run the following command(s) to install necessary dependencies.
 ````
 npm i
 ````
+
 ## Usage
-Darth Mirandor is the best
+Han shot first!
 
 ## License
 This project's licenses include GitHub
@@ -31,5 +33,12 @@ Always pull first
 ````
 npm test
 ````
+
 ## Questions
-Contact [@Mirandor](darth.mirandor@gmail.com)
+Contact @mirandor at <darth.mirandor@gmail.com> with any questions or issues.
+
+## Acknowledgments
+A list of resources used for this README generator
+* [Shields.io](https://shields.io/)
+* [GitHub Guide: Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)

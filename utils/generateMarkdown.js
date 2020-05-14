@@ -1,7 +1,8 @@
 function generateMarkdown(data) {
   return `
 # ${data.title}
-[![${data.license} license](https://img.shields.io/github/license/${data.username}/${data.title}?label=GitHub&logo=github)](${data.url})
+:${data.emoji}: 
+[![${data.username}](https://img.shields.io/badge/GitHub-${data.username}-black?logo=github&style=flat-square)](${data.url})
 
 ## Description
 ${data.description}
@@ -19,6 +20,7 @@ Run the following command(s) to install necessary dependencies.
 \`\`\`\`
 ${data.install}
 \`\`\`\`
+
 ## Usage
 ${data.usage}
 
@@ -32,8 +34,15 @@ ${data.contributing}
 \`\`\`\`
 ${data.tests}
 \`\`\`\`
+
 ## Questions
-Contact [@${data.username}](${data.email})
+Contact @${data.username} at <${data.email}> with any questions or issues.
+
+## Acknowledgments
+A list of resources used for this README generator
+* [Shields.io](https://shields.io/)
+* [GitHub Guide: Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 `
 }; 
 
