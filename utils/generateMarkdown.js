@@ -33,8 +33,8 @@ ${data.contributing}
 ${data.tests}
 \`\`\`\`
 ## Questions
-Contact @${data.username}
+Contact [@${data.username}](${data.email})
 `
-};
+}; 
 
 module.exports = generateMarkdown;
