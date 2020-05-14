@@ -3,14 +3,16 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const chalk = require("chalk");
+const path = require("path");
 var generateMarkdown = require('./utils/generateMarkdown');
 
 // chalk variables for console log
 const errors = chalk.bold.bgRedBright;
 const success = chalk.bold.black.bgGreenBright;
 
-// questions
-const questions = ([
+// init function & inquirer questions 
+function init(){
+  inquirer.prompt([
   {
     type: "input",
     name: "username",
@@ -37,10 +39,10 @@ const questions = ([
     message: "Provide a short description for your project."
   },
   {
-    type: "checkbox",
+    type: "input",
     name: "license",
     message: "What licenses should your project have?",
-    choices: ["GitHub", "NPM", "To Kill", "To Party"]
+    default: "GitHub"
   },
   {
     type: "input",
@@ -64,14 +66,15 @@ const questions = ([
     name: "contributing",
     message: "What do users need to know about contributing to the repo?"
   }
-]);
+  ]).then(function(data){
 
-function writeToFile(fileName, data) {
+  writeToFile("README.md", generateMarkdown({ ...data }));
 
-}
+  })
 
-function init() {
-
-}
+  function writeToFile(fileName, data){
+    return fs.writeFileSync(path.join(process.cwd(),fileName),data);
+  }
+};
 
 init();

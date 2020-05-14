@@ -1,7 +1,7 @@
 function generateMarkdown(data) {
   return `
 # ${data.title}
-[![GitHub license](https://img.shields.io/github/license/${data.username}/${data.title}?label=GitHub&logo=github)](${data.url})
+[![${data.license} license](https://img.shields.io/github/license/${data.username}/${data.title}?label=GitHub&logo=github)](${data.url})
 
 ## Description
 ${data.description}
@@ -16,9 +16,9 @@ ${data.description}
 
 ## Installation
 Run the following command(s) to install necessary dependencies.
-````
+\`\`\`\`
 ${data.install}
-````
+\`\`\`\`
 ## Usage
 ${data.usage}
 
@@ -29,12 +29,12 @@ This project's licenses include ${data.license}
 ${data.contributing}
 
 ## Tests
-````
+\`\`\`\`
 ${data.tests}
-````
+\`\`\`\`
 ## Questions
 Contact @${data.username}
-`;
-}
+`
+};
 
 module.exports = generateMarkdown;
